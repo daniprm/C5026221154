@@ -1,0 +1,99 @@
+*{
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.rahmat-polygon{
+    object-fit: cover;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.rahmat-konten{
+    margin-top: 4vw;
+    width: fit-content;
+
+}
+.rahmat-logo{
+    display: flex;
+    margin-bottom: 2vw;
+}
+.rahmat-logo img{
+    width: 26%;
+    margin-left: auto;
+}
+
+.rahmat-judul{
+    width: fit-content;
+    font-size: 250%;
+    font-weight: bold;
+}
+.rahmat-list{
+    display: flex;
+    height: fit-content;
+}
+.rahmat-list ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.rahmat-list li{
+    margin-left: 2vw;
+    margin-top: -5px;
+    margin-bottom: 1vw;
+    font-size: 180%;
+}
+.rahmat-list img{
+    width: 7.5%;
+    height: 7.5%;
+}
+.rahmat-isi ul{
+    display: block;
+    list-style: none;
+    padding: 0px;
+}
+.rahmat-isi .rahmat-list{
+    padding-bottom: 20px;
+}
+.rahmat-isi{
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 719px){
+    .rahmat-polygon{
+        width: 70%;
+        height: auto;
+    }
+    .rahmat-logo img{
+        width: 16vw;
+    }
+    .rahmat-konten{
+        position: relative;
+        right: 22vw;
+    
+    }
+    .rahmat-judul{
+        font-size: 5vw;
+    }
+    .rahmat-list img{
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+    .rahmat-list li{
+        font-size: 3vw;
+    }
+    
+}
+
+
+
+
+

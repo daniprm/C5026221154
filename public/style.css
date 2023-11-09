@@ -1,0 +1,377 @@
+*{
+    font-family: 'Rubik', sans-serif;
+}
+*::selection{
+    background-color: hsla(0, 0%, 0%, 0.8);
+    color: white;
+}
+.navbar{
+    background-color: rgba(245, 245, 245, 0.75);
+    backdrop-filter: blur(10px);
+}
+.header{
+    margin-top: 91px;
+    padding: 100px;
+}
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(20, 66, 114)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: 0.3s;
+
+}
+.navbar-toggler-icon:hover{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(20, 66, 114)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: 0.3s;
+
+}
+/* Untuk menghilangkan border pada navbar toggler */
+.navbar-toggler {
+    border: none;
+}
+
+/* Untuk menghilangkan box shadow (seperti border) ketika navbar toggler diklik */
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.nav-link{
+    color: #252525;
+    transition: 0.3s;
+
+    position: relative;
+}
+.nav-item{
+    width: fit-content;
+}
+.nav-item::after{
+    content: '';
+    height: 4px;
+    width: 0%;
+    background: #144272;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+}
+.nav-item:hover::after{
+    width: 100%;
+    color: #144272;
+}
+.nav-link:hover{
+    color: #144272;
+
+    animation-name: gerakan;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+
+}
+@keyframes gerakan {
+    0% {
+      transform: translateY(-0.2px); /* Mulai dari posisi awal */
+    }
+    25% {
+      transform:translateY(-1.5px);
+    }
+    50% {
+        transform:translateY(-3px);
+      }
+    75%{
+        transform:translateY(-1.5px);
+    }
+    100%{
+        transform:translateY(-0.2px);
+    }
+
+  }
+.enter-blog{
+    border: 1px solid #144272;
+    background-color: white;
+    color: #144272;
+    transition: 0.3s;
+}
+.enter-blog a{
+    text-decoration: none;
+    color: #144272;
+    font-weight: bold;
+}
+.enter-blog:hover{
+    background-color: #144272;
+    border-color: #144272;
+    transition: ease-in-out 0.2s;
+
+    .enter{
+        color: white;
+    }
+
+    transform: translateY(-5px);
+}
+.don{
+    color: #144272;
+}
+
+h1{
+    color: #144272;
+}
+.navbar-brand:hover{
+    color: #144272;
+    transform: scale(1.1);
+    transition: 0.3s;
+
+}
+.navbar-brand{
+    display: flex;
+    font-weight: bold;
+    color: #144272;
+    transition: 0.3s;
+}
+.navbar-brand p{
+    margin: auto 0;
+    font-size: 100%;
+    padding-left: 10px;
+}
+.navbar-brand img{
+    width: 20%;
+}
+footer{
+    margin-top: auto;
+    width: 100%;
+}
+.card img{
+    border-radius: 20px;
+}
+.navigate a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.navigate a:hover{
+    color: rgb(160, 160, 160);
+    transition: 0.2s;
+}
+.copy{
+    font-size: 12px;
+    padding: 30px 0;
+}
+.rahmat-pre{
+    width: 470px;
+    line-height: 2;
+}
+.rahmat-nama{
+    letter-spacing: 5px;
+    font-size: 25px;
+    color: #144272;
+}
+.banner img{
+    width: 100%;
+}
+.rahmat-cerita{
+    text-align: justify;
+    line-height: 2;
+    width: 80%;
+}
+
+.rahmat-back-top{
+    color: white;
+    transition: 0.5s;
+}
+.rahmat-back-top:hover{
+    color: #4d4949;
+    transition: 0.2s;
+
+}
+.rahmat-sosial-icon{
+    background-color: #4d4949;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    transition: 0.3s;
+}
+.rahmat-sosial-icon:hover{
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+.rahmat-sosial-icon img{
+    width: 26px;
+}
+ul{
+    list-style: none;
+    margin-left: -28px;
+    margin-top: 20px;
+
+}
+.rahmat-kontak-list li{
+    padding-bottom: 20px;
+}
+.rahmat-kontak-info{
+    font-size: small;
+    padding-left: 20px;
+}
+.rahmat-kontak-info a{
+    color: white;
+    transition: 0.5s;
+}
+.rahmat-kontak-info a:hover{
+    color: rgb(160, 160, 160);
+    transition: 0.2s;
+}
+footer{
+    background-color: #252525;
+    margin-top: 200px;
+}
+h1{
+    letter-spacing: 5px;
+}
+h3{
+    color: #252525;
+}
+.header h1{
+    letter-spacing: 0;
+}
+.sosial-container{
+    width: fit-content;
+}
+.form-control{
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: none;
+}
+.inputPesan{
+    margin-left: -24px;
+
+}
+textarea{
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 100%;
+}
+.submit{
+    background-color: #144272;
+    color: white;
+    border-radius: 5px;
+}
+.submit:hover{
+    background-color: #081b2f;
+    color: white;
+}
+@media only screen and (min-width: 768px){
+    .navbar-brand p{
+        font-size: 120%;
+    }
+    .welcome-text{
+        width: 48vw
+    }
+    .rahmat-nama{
+        font-size: 50px;
+        letter-spacing: 0;
+    }
+    .rahmat-kontak-teks{
+        text-align: left;
+    }
+    .rahmat-kontak-teks p{
+        width: 30vw;
+    }
+    .form-control{
+        width: 75%;
+    }
+    textarea{
+        width: 75%;
+    }
+  #tentang{
+    margin-bottom: 400px;
+    }
+}
+
+@media only screen and (min-width: 1200px){
+.card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+
+  .flipcard-dalam {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .card:hover .flipcard-dalam {
+    transform: rotateY(180deg);
+  }
+
+  .flipcard-depan, .flipcard-belakang {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+
+  .flipcard-depan {
+    background-color: #bbb;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  .flipcard-belakang {
+    background-color: #144272;
+    color: white;
+    transform: rotateY(180deg);
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 35px;
+    height: 410px;
+    text-align: justify;
+    font-size: small;
+    font-weight:400;
+    line-height: 2;
+  }
+  .teks-card-tentang{
+    padding-top: 420px;
+}
+}
+
+.accordion-header button{
+    color: #252525;
+}
+.accordion-item{
+    border: 2px solid #252525;
+}
+.accordion-item button:hover{
+    background-color: #252525;
+    color: white;
+}
+.teks-aktivitas{
+    text-align: justify;
+}
+.carousel-item{
+    transition: transform 2s ease, opacity .5s ease-out;
+
+}
+.carousel-item img{
+    aspect-ratio: 16/5;
+    object-fit:cover;
+}
+/* .konten-galeri{
+    padding-bottom: 5%;
+    margin-left: auto;
+    font-size: small;
+} */
+.konten-galeri img{
+    border-radius: 10px;
+}
+#kontak, #galeri{
+    padding-top: 100px;
+}
+
+.pesan-error {
+    display: none;
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }

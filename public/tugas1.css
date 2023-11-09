@@ -1,0 +1,174 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(253, 198, 0);
+    background-color: black;
+    box-sizing: border-box;
+}
+
+
+.rahmat-header{
+    display: flex;
+    padding: 12px;
+    margin: 12px 0px;
+}
+.rahmat-share{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.rahmat-subscribe{
+    display: flex;
+    justify-content: center;
+    background-color: #efefef;
+    width: 130.53px;
+    border-radius: 62px;
+    margin-left: auto;
+    cursor: pointer;
+
+}
+.rahmat-subscribe svg{
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px 5px;
+}
+.rahmat-subscribe p{
+    color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 14.2px;
+    font-weight:bold;
+}
+.rahmat-content p img{
+    height: 16px;
+    display: inline;
+    width: fit-content;
+    margin: 0px;
+}
+.rahmat-logo{
+    fill: rgb(253, 198, 0);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 96px;
+    width: 96px;
+    border-radius: 50%;
+}
+.rahmat-content .rahmat-judul{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+    
+
+ul{
+    list-style: none;
+    display: contents;
+    
+    
+}
+ul li{
+    background-color: rgb(253, 198, 0);
+    width: 95%;
+    height: 56px;
+    margin-top: 15px;
+    border-radius: 10em;
+    display: flex;
+    box-sizing: border-box;
+    border: 2px solid rgb(253, 198, 0);
+    transition: ease-in-out 0.2s;
+    margin-left: auto;
+    margin-right: auto;
+}
+.rahmat-more svg{
+    height: 16px;
+    width: 16px;
+    transition: ease-in-out 1s;
+    fill: black;
+}
+.rahmat-more{
+    position: relative;
+    right: 18px;
+    z-index: 1;
+    width: fit-content;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.rahmat-judul-artikel{
+    text-decoration: none;
+    width: 100%;
+}
+.rahmat-judul-artikel p{
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+
+ul li:hover{
+    background-color: black;
+    .rahmat-more svg{
+        fill: rgb(253, 198, 0);
+        transition: ease-in-out;
+    }
+    .rahmat-judul-artikel p{
+        color: rgb(253, 198, 0);
+    }
+    .rahmat-pic{
+        fill: rgb(253, 198, 0);
+        transition: ease-in-out 0.2s;
+    }
+    transition: ease-in-out 0.2s;
+}
+
+.rahmat-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    padding: 0px 8px;
+    height: 10em;
+}
+.rahmat-medsos{
+    height: 20%;
+    fill: rgb(253, 198, 0);
+    width: fit-content;
+    padding: 0px 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.rahmat-medsos:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+.rahmat-pic{
+    fill: black;
+    height: 48.6px;
+    width: fit-content;
+    position: relative;
+    left: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 720px){
+    ul li{
+        width: 676px;
+    }
+    .rahmat-header{
+        width: 776px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

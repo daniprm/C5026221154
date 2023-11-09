@@ -1,0 +1,18 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    .picture {
+        border-radius: 50%;
+      }
+      
+      .staticpicture {
+        border-radius: 10px 10px;
+      }
+      
+      .kotakfoto {
+        border-radius: 10px 10px;
+        border: 1px solid #ddd;
+        padding: 5px;
+        width: 690px;
+      }
+}
+
