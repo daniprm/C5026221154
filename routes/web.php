@@ -63,3 +63,6 @@ Route::get('tugasKastemisasi2', function () {
 });
 Route::get('contohController', 'App\Http\Controllers\ContohController@index');
 Route::get('biodata', 'App\Http\Controllers\ContohController@biodata');
+
+Route::get('showJam/{jam}', 'App\Http\Controllers\ContohController@showTime');
+

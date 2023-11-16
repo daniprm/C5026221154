@@ -19,4 +19,8 @@ class ContohController extends Controller
         $umur = 18;
         return view('biodata', ['nama' => $nama, 'umur' => $umur, 'alamat' => $alamat]); //=> artinya adalah yang kanan  dicopykan ke kiri
     }
+
+    public function showTime($jam){
+        return $jam;
+    }
 }
