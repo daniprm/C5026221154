@@ -66,3 +66,22 @@ Route::get('biodata', 'App\Http\Controllers\ContohController@biodata');
 
 Route::get('showJam/{jam}', 'App\Http\Controllers\ContohController@showTime');
 
+Route::get('/blog', function () {
+    return view('home');
+});
+Route::get('blog/tentang', function () {
+    return view('tentang');
+});
+Route::get('blog/kontak', function () {
+    return view('kontak');
+});
+Route::get('iniForm', function () {
+    return view('iniFOrm');
+});
+Route::get('master', function () {
+    return view('master');
+});
+
+Route::get('formulir', 'App\Http\Controllers\ContohController@formulir');
+Route::post('/formulir/proses', 'App\Http\Controllers\ContohController@proses');
+
