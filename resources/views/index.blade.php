@@ -12,9 +12,16 @@
 	<br/>
 
     <p>Cari Nama Pegawai :</p>
+
     <form action="/pegawai/cari" method="GET">
-        <input type="text" name="cari" placeholder="Cari Pegawai .." value="{{ old('cari', isset($cari)? $cari : '') }}" class="form-control w-75">
-        <input type="submit" value="CARI" class="btn btn-info mt-1 mb-5">
+
+        <div class="container form-group row">
+            <input type="text" name="cari" placeholder="Cari Pegawai .." value="{{ old('cari', isset($cari)? $cari : '') }}" class="form-control w-75 mr-2">
+
+            <input type="submit" value="CARI" class="btn btn-info">
+        </div>
+
+
     </form>
 
 	<table class="table table-striped table-hover">
@@ -32,9 +39,11 @@
 			<td>{{ $p->pegawai_umur }}</td>
 			<td>{{ $p->pegawai_alamat }}</td>
 			<td class="text-center">
-				<a href="/pegawai/edit/{{ $p->pegawai_id }}" class="btn btn-warning">Edit</a>
-				|
-				<a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger d-md-inline d-block mt-3">Hapus</a>
+                <a href="/pegawai/view/{{ $p->pegawai_id }}" class="btn btn-success d-lg-inline d-block">View</a>
+                <span class="d-lg-inline d-none">|</span>
+				<a href="/pegawai/edit/{{ $p->pegawai_id }}" class="btn btn-warning d-lg-inline d-block my-2">Edit</a>
+				<span class="d-lg-inline d-none">|</span>
+				<a href="/pegawai/hapus/{{ $p->pegawai_id }}" class="btn btn-danger d-lg-inline d-block">Hapus</a>
 			</td>
 		</tr>
 		@endforeach
