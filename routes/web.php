@@ -95,5 +95,28 @@ Route::get('/pegawai/hapus/{id}','App\Http\Controllers\PegawaiController@hapus')
 Route::get('/pegawai/view/{id}','App\Http\Controllers\PegawaiController@view');
 Route::get('/pegawai/cari','App\Http\Controllers\PegawaiController@cari');
 
+// Route Nilai Kuliah
+Route::get('/nilaikuliah','App\Http\Controllers\latihanEASController@index');
+Route::get('/nilaikuliah/tambahNilaiKuliah','App\Http\Controllers\latihanEASController@tambahNilaiKuliah');
+Route::post('/nilaikuliah/storeNilai','App\Http\Controllers\latihanEASController@storeNilai');
+Route::get('/nilaikuliah/cari','App\Http\Controllers\latihanEASController@cari');
+
+// Route Keranjang Belanja
+Route::get('/keranjangbelanja','App\Http\Controllers\keranjangBelanjaController@index');
+Route::get('/keranjangbelanja/tambahKeranjangBelanja','App\Http\Controllers\keranjangBelanjaController@tambahKeranjangBelanja');
+Route::post('/keranjangbelanja/store','App\Http\Controllers\keranjangBelanjaController@store');
+Route::get('/keranjangbelanja/cari','App\Http\Controllers\keranjangBelanjaController@cari');
+Route::get('/keranjangbelanja/hapus/{id}','App\Http\Controllers\keranjangBelanjaController@hapus');
+
+// Route Blueray
+Route::get('/blueray','App\Http\Controllers\bluerayController@index');
+Route::get('/blueray/tambah','App\Http\Controllers\bluerayController@tambah');
+Route::post('/blueray/store','App\Http\Controllers\bluerayController@store');
+Route::get('/blueray/edit/{id}','App\Http\Controllers\bluerayController@edit');
+Route::post('/blueray/update','App\Http\Controllers\bluerayController@update');
+Route::get('/blueray/hapus/{id}','App\Http\Controllers\bluerayController@hapus');
+Route::get('/blueray/view/{id}','App\Http\Controllers\bluerayController@view');
+Route::get('/blueray/cari','App\Http\Controllers\bluerayController@cari');
+
 
 
