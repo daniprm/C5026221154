@@ -119,4 +119,10 @@ Route::get('/blueray/view/{id}','App\Http\Controllers\bluerayController@view');
 Route::get('/blueray/cari','App\Http\Controllers\bluerayController@cari');
 
 
+//Route Kategori
+Route::get('/kategori','App\Http\Controllers\kategoriController@index');
+Route::post('/kategori/view','App\Http\Controllers\kategoriController@view');
+
+
+
 
